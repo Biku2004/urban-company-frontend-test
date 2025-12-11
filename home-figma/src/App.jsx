@@ -134,7 +134,7 @@ const Preloader = ({ onComplete }) => {
     <div className={`fixed inset-0 z-[100] flex flex-col justify-between p-6 md:p-10 bg-[#111] text-white transition-transform duration-1000 ease-[cubic-bezier(0.76,0,0.24,1)] ${isFinished ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="flex justify-between items-start">
         <div className="flex items-center gap-2"><div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div><span className="font-mono text-xs uppercase tracking-widest text-slate-400">Loading Resources</span></div>
-        <div className="font-mono text-xs text-slate-500">ODIABUILD v2.0</div>
+        <div className="font-mono text-xs text-slate-500">THE URBAN PROJECT & INTERIORS v2.0</div>
       </div>
       <div className="flex items-end justify-between">
         <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none font-mono">{count}%</h1>
@@ -473,10 +473,12 @@ const App = () => {
             
             <div className="flex items-center gap-3 hover-target cursor-pointer">
               <div className={`p-2 rounded-full transition-colors ${scrolled ? 'bg-orange-500' : 'bg-slate-900'}`}>
-                <Hammer className="w-5 h-5 text-white" />
+                {/* <Hammer className="w-5 h-5 text-white" /> */}
+                <img src='/urban_logo.png' className="w-6 h-6 text-white" />
+
               </div>
               <div className={`flex flex-col ${scrolled ? 'text-white' : 'text-slate-900'}`}>
-                <span className="font-bold leading-none tracking-tight">OdiaBuild</span>
+                <span className="font-bold leading-none tracking-tight">The Urban Project & Interior</span>
                 <span className="text-[9px] font-bold uppercase tracking-widest opacity-60">Bhubaneswar</span>
               </div>
             </div>
